@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YAj-1v-che">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--FramePrincipale-->
+        <scene sceneID="acP-1f-4v7">
+            <objects>
+                <navigationController title="FramePrincipale" id="YAj-1v-che" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rSQ-GO-ceE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xzo-he-lui" kind="relationship" relationship="rootViewController" id="pjv-Uv-VxK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OY-6c-2mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="457"/>
+        </scene>
+        <!--La Morra Cinese-->
+        <scene sceneID="J8t-9W-0YI">
+            <objects>
+                <tableViewController id="Xzo-he-lui" customClass="UNBControlloPartita" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="gwx-T7-asE" customClass="UNBVistaPartita">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Partite Giocate Finora" id="8VO-DG-i0P">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="EnB-hE-Sor">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EnB-hE-Sor" id="Q5j-fc-CLg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partite Vinte dal Giocatore:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF7-aw-pEQ">
+                                                    <rect key="frame" x="18" y="7" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-w6-Dkh">
+                                                    <rect key="frame" x="582" y="7" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hQg-w6-Dkh" firstAttribute="trailing" secondItem="Q5j-fc-CLg" secondAttribute="trailingMargin" id="fLh-MV-Wxx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" rowHeight="37" id="wFS-dR-8CN">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wFS-dR-8CN" id="mQV-fh-AAq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partite Vinte dal Computer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-lo-UMR">
+                                                    <rect key="frame" x="18" y="7" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGR-1X-jcr">
+                                                    <rect key="frame" x="582" y="7" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UGR-1X-jcr" firstAttribute="trailing" secondItem="mQV-fh-AAq" secondAttribute="trailingMargin" id="ScL-fF-VjR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" rowHeight="37" id="KNP-5a-bQ8">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNP-5a-bQ8" id="8fa-Fy-2ae">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im7-kG-RqJ">
+                                                    <rect key="frame" x="20" y="1" width="128" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Nuova partita">
+                                                        <color key="titleColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="disabled">
+                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="azioneNuovaPartita:" destination="Xzo-he-lui" eventType="touchUpInside" id="5g0-FO-f75"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCf-jl-hmE">
+                                                    <rect key="frame" x="435" y="0.0" width="157" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Interrompi partita">
+                                                        <color key="titleColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="disabled">
+                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="azioneInterrompiPartita:" destination="Xzo-he-lui" eventType="touchUpInside" id="ch5-84-Ejf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Im7-kG-RqJ" firstAttribute="leading" secondItem="8fa-Fy-2ae" secondAttribute="leadingMargin" id="PlL-R1-bN1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UCf-jl-hmE" secondAttribute="trailing" constant="5" id="vh7-Rx-IPf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Partita in Corso" id="yjY-rq-O7B">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="laS-jL-jKo">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="laS-jL-jKo" id="DIb-sG-4R5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mani Vinte dal Giocatore:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laz-Bt-Lwo">
+                                                    <rect key="frame" x="18" y="8" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-Ls-ade">
+                                                    <rect key="frame" x="582" y="9" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EOn-Ls-ade" firstAttribute="trailing" secondItem="DIb-sG-4R5" secondAttribute="trailingMargin" id="jm6-R9-ope"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="Jea-VT-64V">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jea-VT-64V" id="Jgb-d8-m7g">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pareggi:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go5-k9-yG7">
+                                                    <rect key="frame" x="18" y="8" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-rf-Caz">
+                                                    <rect key="frame" x="582" y="9" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X4g-rf-Caz" firstAttribute="trailing" secondItem="Jgb-d8-m7g" secondAttribute="trailingMargin" id="b8N-8l-H7a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="OfN-5c-wIx">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OfN-5c-wIx" id="M8q-Of-R2s">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mani Vinte dal Computer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-Da-vfR">
+                                                    <rect key="frame" x="18" y="8" width="268" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-f8-DYc">
+                                                    <rect key="frame" x="582" y="9" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eeA-f8-DYc" firstAttribute="trailing" secondItem="M8q-Of-R2s" secondAttribute="trailingMargin" id="Zbz-CR-EaR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="Y3d-lK-PxL">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y3d-lK-PxL" id="dDz-b1-w4B">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mani Vinte dal Computer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25e-2P-bsM">
+                                                    <rect key="frame" x="18" y="5" width="574" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mani Vinte dal Computer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-BR-9ns">
+                                                    <rect key="frame" x="18" y="28" width="574" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="25e-2P-bsM" firstAttribute="trailing" secondItem="dDz-b1-w4B" secondAttribute="trailingMargin" id="5gx-KT-wWS"/>
+                                                <constraint firstItem="GKe-BR-9ns" firstAttribute="trailing" secondItem="dDz-b1-w4B" secondAttribute="trailingMargin" id="S3v-49-ZLd"/>
+                                                <constraint firstItem="GKe-BR-9ns" firstAttribute="leading" secondItem="dDz-b1-w4B" secondAttribute="leadingMargin" constant="10" id="VpW-Hq-hFf"/>
+                                                <constraint firstItem="25e-2P-bsM" firstAttribute="leading" secondItem="dDz-b1-w4B" secondAttribute="leadingMargin" constant="10" id="vHP-zq-nxL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Gioca la tua Partita!" id="9Wt-yY-wPV">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="3I7-Kg-OIa">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3I7-Kg-OIa" id="3p6-Rl-ByT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mwm-OT-iok">
+                                                    <rect key="frame" x="-12" y="-16" width="624" height="74"/>
+                                                    <subviews>
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgb-c1-5in">
+                                                            <rect key="frame" x="20" y="16" width="128" height="33"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title="CARTA">
+                                                                <color key="titleColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="disabled">
+                                                                <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="azioneGioca:" destination="Xzo-he-lui" eventType="touchUpInside" id="Tqr-Sz-Oth"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-2H-4RQ">
+                                                            <rect key="frame" x="248" y="16" width="128" height="33"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title="FORBICI">
+                                                                <color key="titleColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="disabled">
+                                                                <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="azioneGioca:" destination="Xzo-he-lui" eventType="touchUpInside" id="bLa-CI-BYa"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0a-aZ-FwK">
+                                                            <rect key="frame" x="476" y="15" width="128" height="33"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title="SASSO">
+                                                                <color key="titleColor" red="1" green="0.83529412749999998" blue="0.074509806930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="disabled">
+                                                                <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="azioneGioca:" destination="Xzo-he-lui" eventType="touchUpInside" id="CgD-81-khM"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="centerX" secondItem="4Gd-2H-4RQ" secondAttribute="centerX" id="6dK-kJ-RF6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="n0a-aZ-FwK" secondAttribute="trailing" constant="20" id="LHb-4m-M8v"/>
+                                                        <constraint firstItem="Lgb-c1-5in" firstAttribute="leading" secondItem="mwm-OT-iok" secondAttribute="leading" id="sHw-QB-JxA"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mwm-OT-iok" secondAttribute="bottom" constant="-22.5" id="A8w-Wd-gHq"/>
+                                                <constraint firstItem="mwm-OT-iok" firstAttribute="leading" secondItem="3p6-Rl-ByT" secondAttribute="leadingMargin" constant="-20" id="HBD-pb-m1G"/>
+                                                <constraint firstAttribute="centerX" secondItem="mwm-OT-iok" secondAttribute="centerX" id="PVh-Cg-abN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mwm-OT-iok" secondAttribute="trailing" constant="-20" id="Rc4-y0-zh3"/>
+                                                <constraint firstItem="mwm-OT-iok" firstAttribute="top" secondItem="3p6-Rl-ByT" secondAttribute="topMargin" constant="-24" id="Xv6-Wc-Y9p"/>
+                                                <constraint firstAttribute="centerY" secondItem="mwm-OT-iok" secondAttribute="centerY" constant="0.75" id="sZC-sn-Yg7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="NFV-Hk-DjR">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NFV-Hk-DjR" id="Llh-PB-baL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="forbici1" translatesAutoresizingMaskIntoConstraints="NO" id="GBg-tX-BzV">
+                                                    <rect key="frame" x="29" y="1" width="100" height="110"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="carta2" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-8B-L4F">
+                                                    <rect key="frame" x="472" y="1" width="100" height="110"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GBg-tX-BzV" firstAttribute="leading" secondItem="Llh-PB-baL" secondAttribute="leadingMargin" constant="21" id="bKp-sN-3iJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5bG-8B-L4F" secondAttribute="trailing" constant="20" id="ve2-CL-IW5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="bottoneCarta" destination="Lgb-c1-5in" id="yF7-WA-Etj"/>
+                            <outlet property="bottoneForbici" destination="4Gd-2H-4RQ" id="OXW-Xl-oIZ"/>
+                            <outlet property="bottoneIniziaPartita" destination="Im7-kG-RqJ" id="xYJ-4d-AYk"/>
+                            <outlet property="bottoneInterrompiPartita" destination="UCf-jl-hmE" id="RD0-7N-I0e"/>
+                            <outlet property="bottoneSasso" destination="n0a-aZ-FwK" id="tFE-4Y-30p"/>
+                            <outlet property="dataSource" destination="Xzo-he-lui" id="4ry-6l-bSJ"/>
+                            <outlet property="delegate" destination="Xzo-he-lui" id="MT8-85-trn"/>
+                            <outlet property="imageViewGiocataComputer" destination="5bG-8B-L4F" id="6BS-Ri-DqD"/>
+                            <outlet property="imageViewGiocataGiocatore" destination="GBg-tX-BzV" id="HK7-X3-2Wa"/>
+                            <outlet property="labelManiVinteComputer" destination="eeA-f8-DYc" id="tAv-14-8Z3"/>
+                            <outlet property="labelManiVinteGiocatore" destination="EOn-Ls-ade" id="JwP-KA-beE"/>
+                            <outlet property="labelMessaggioMano" destination="GKe-BR-9ns" id="w3R-NN-JOj"/>
+                            <outlet property="labelMessaggioPartita" destination="25e-2P-bsM" id="pLc-GZ-TF5"/>
+                            <outlet property="labelPareggi" destination="X4g-rf-Caz" id="0lR-vH-OLT"/>
+                            <outlet property="labelPartiteVinteComputer" destination="UGR-1X-jcr" id="KRi-0c-M1x"/>
+                            <outlet property="labelPartiteVinteGiocatore" destination="hQg-w6-Dkh" id="Qt7-qp-HZG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="La Morra Cinese" id="Tgf-Zm-xYt">
+                        <barButtonItem key="rightBarButtonItem" image="info-icon" id="8Wm-qU-W3Y">
+                            <connections>
+                                <action selector="azioneVisualizzaInformazioni:" destination="Xzo-he-lui" id="Aup-l5-fP9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1600"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="Tgf-Zm-xYt" id="VaW-R3-zAh"/>
+                        <outlet property="vistaPartita" destination="gwx-T7-asE" id="lVb-6j-Gxs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzo-gO-TRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="457"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carta2" width="100" height="100"/>
+        <image name="forbici1" width="100" height="100"/>
+        <image name="info-icon" width="25" height="25"/>
+    </resources>
+</document>
