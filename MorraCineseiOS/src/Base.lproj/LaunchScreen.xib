@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -12,10 +12,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorraSplash.png" translatesAutoresizingMaskIntoConstraints="NO" id="7oJ-1Y-WcT">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorraSplash" translatesAutoresizingMaskIntoConstraints="NO" id="7oJ-1Y-WcT">
                     <rect key="frame" x="-4" y="0.0" width="427" height="736"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-unibas.png" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-jj-ogj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-unibas" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-jj-ogj">
                     <rect key="frame" x="159" y="28" width="97" height="97"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="97" id="FuH-SH-MIY"/>
@@ -74,7 +74,7 @@ Dipartimento di Matematica, Informatica ed Economia</string>
         </view>
     </objects>
     <resources>
-        <image name="MorraSplash.png" width="1024" height="2048"/>
-        <image name="logo-unibas.png" width="512" height="512"/>
+        <image name="MorraSplash" width="511" height="1023"/>
+        <image name="logo-unibas" width="170" height="170"/>
     </resources>
 </document>

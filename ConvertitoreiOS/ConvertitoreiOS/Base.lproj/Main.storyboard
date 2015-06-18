@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Controllo Principale-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UNBControlloPrincipale" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UNBVistaPrincipale">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voto 30mi:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtQ-cQ-FHR">
+                                <rect key="frame" x="16" y="35" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2X-hM-ogb">
+                                <rect key="frame" x="106" y="30" width="478" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voto 110mi:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-EK-pgO">
+                                <rect key="frame" x="6" y="86" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGL-45-HHB">
+                                <rect key="frame" x="106" y="81" width="479" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfA-g5-R2h">
+                                <rect key="frame" x="207" y="135" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Rha-Bo-aPt"/>
+                                    <constraint firstAttribute="height" constant="30" id="uog-R0-1W1"/>
+                                </constraints>
+                                <state key="normal" title="Converti">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="azioneConverti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCX-AD-VOE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As8-1k-eeN">
+                                <rect key="frame" x="304" y="135" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IhW-pW-ThW"/>
+                                    <constraint firstAttribute="width" constant="89" id="sJk-TB-7S1"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="azioneReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmL-xQ-262"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inserisci il valore da convertire" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-B5-882">
+                                <rect key="frame" x="16" y="191" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PfA-g5-R2h" firstAttribute="top" secondItem="VGL-45-HHB" secondAttribute="bottom" constant="24" id="0c7-WM-j9w"/>
+                            <constraint firstItem="wtQ-cQ-FHR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="41m-0c-zIv"/>
+                            <constraint firstItem="f2Z-EK-pgO" firstAttribute="top" secondItem="wtQ-cQ-FHR" secondAttribute="bottom" constant="30" id="5n3-Gv-tDn"/>
+                            <constraint firstItem="VGL-45-HHB" firstAttribute="top" secondItem="G2X-hM-ogb" secondAttribute="bottom" constant="21" id="7ph-pj-gQL"/>
+                            <constraint firstItem="adm-B5-882" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AfP-O3-9T7"/>
+                            <constraint firstItem="As8-1k-eeN" firstAttribute="top" secondItem="VGL-45-HHB" secondAttribute="bottom" constant="24" id="C2M-vp-hF3"/>
+                            <constraint firstItem="VGL-45-HHB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="F2a-SZ-fe0"/>
+                            <constraint firstItem="adm-B5-882" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lk3-d6-Ed9"/>
+                            <constraint firstItem="G2X-hM-ogb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="TXq-sf-iwL"/>
+                            <constraint firstItem="As8-1k-eeN" firstAttribute="leading" secondItem="PfA-g5-R2h" secondAttribute="trailing" constant="8" id="V1a-cR-gj1"/>
+                            <constraint firstItem="f2Z-EK-pgO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="Xtp-QK-mJ7"/>
+                            <constraint firstItem="wtQ-cQ-FHR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lhn-Jx-TXJ"/>
+                            <constraint firstItem="VGL-45-HHB" firstAttribute="centerX" secondItem="PfA-g5-R2h" secondAttribute="centerX" constant="93.5" id="ltb-Jg-rfw"/>
+                            <constraint firstItem="VGL-45-HHB" firstAttribute="leading" secondItem="f2Z-EK-pgO" secondAttribute="trailing" constant="8" id="lzN-NT-R3a"/>
+                            <constraint firstItem="wtQ-cQ-FHR" firstAttribute="centerY" secondItem="G2X-hM-ogb" secondAttribute="centerY" id="mWM-sJ-k7e"/>
+                            <constraint firstItem="G2X-hM-ogb" firstAttribute="leading" secondItem="wtQ-cQ-FHR" secondAttribute="trailing" constant="8" id="onI-iM-c1K"/>
+                            <constraint firstItem="G2X-hM-ogb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r61-K6-1ND"/>
+                            <constraint firstItem="adm-B5-882" firstAttribute="top" secondItem="PfA-g5-R2h" secondAttribute="bottom" constant="26" id="tMp-f8-2aN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lhn-Jx-TXJ"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outlet property="campo110mi" destination="VGL-45-HHB" id="P1h-cz-ayl"/>
+                            <outlet property="campo30mi" destination="G2X-hM-ogb" id="Ol8-Nm-fXh"/>
+                            <outlet property="testoRisultato" destination="adm-B5-882" id="6F7-gI-FeW"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="vistaPrincipale" destination="8bC-Xf-vdC" id="9eI-Kc-Awr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

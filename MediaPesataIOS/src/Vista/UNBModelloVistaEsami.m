@@ -20,7 +20,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UNBEsame* esame = [[self esami] objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rigaEsame" forIndexPath:indexPath];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"rigaEsame" forIndexPath:indexPath];
     [[cell textLabel] setText:[esame insegnamento]];
     [[cell detailTextLabel] setText:[esame shortString]];
     return cell;

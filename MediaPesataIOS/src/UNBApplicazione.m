@@ -6,7 +6,7 @@
 
 @implementation UNBApplicazione
 
-static UNBApplicazione *singleton = nil;
+static UNBApplicazione* singleton = nil;
 
 + (UNBApplicazione*) instance{
     return singleton;
